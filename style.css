@@ -1,0 +1,59 @@
+*{
+    margin: auto 6em;
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.toolbar p{
+    border: .3em solid black;
+    width: 15em;
+    height: auto;
+    text-align: center;
+    padding: 1em;
+    margin: 2em;
+}
+.title-section img{
+    width: 40em;
+    height: auto;
+}
+
+.title-summary{
+    top: -12em;
+    text-align: left;
+}
+
+.title-summary h1{
+    color: orange;
+    font-size: 4em;
+    white-space: nowrap;
+}
+
+.title-summary h2{
+}
+
+.resume-opening{
+    background-color: lightgray;
+}
+
+.resume-opening .right-half{
+    background-color: white;
+    border: .2em solid black;
+    bottom: 6em;
+    left: 34em;
+    width: 30em;
+    height: auto;
+}
+
+.resume-icons img{
+    height: 15%;
+    width: 15%;
+}
+
+input{
+    width: 75em;
+}
+
+footer img{
+    height: 15%;
+    width: 15%;
+}
