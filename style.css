@@ -1,37 +1,56 @@
 *{
-    margin: auto 3em;
+    margin: auto 8em;
     position: relative;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.toolbar{
+
+    margin-top: 2em;
+    margin-bottom: 6em;
+}
+
 .toolbar p{
+    display: inline-block;
     border: .25em solid black;
+    color: darkorange;
     width: 12em;
     height: auto;
     text-align: center;
     padding: 1em;
-    margin-top: 1em;
-    margin-bottom: 6em;
+    margin: 0 -10em 0 0;
 }
+.toolbar .navbar{
+    display: inline-block;
+    margin: 0 0 0 25%;
+}
+
+.toolbar .navbar li{
+    margin: 0 0 0 0;
+    display: inline-block;
+    padding: 0 1em 0 1em;
+}
+
 .title-section img{
     width: 15em;
     height: auto;
 }
 
 .title-summary{
-    top: -10em;
     text-align: left;
+    margin: -4em 0 3em 20em;
+}
+
+.title-summary h1, h2{
+    margin: 0 auto;
 }
 
 .title-summary h1{
-    color: orange;
+    color: darkorange;
     font-size: 4em;
     white-space: nowrap;
 }
 
-.title-summary h2{
-     left: 6em;
-}
 
 .resume-opening{
     background-color: #F6F6F6;
@@ -43,32 +62,57 @@
 .resume-opening .left-half{
      display: inline-block;
      text-align: right;
+     overflow: hidden;
+     margin: 0 2em 0 0;
+     width: 40%;
+}
+
+.resume-opening .left-half h1, h2{
+    width: 100%;
+    margin: 0 0;
+
+}
+
+.resume-opening .left-half h1{
+    font-size: 4.5em;
+    opacity: 0.6;
+
+}
+
+.resume-opening .left-half  h2{
+    opacity: 0.8;
+
 }
 
 .resume-opening .right-half{
      display: inline-block;
     background-color: white;
-    border: .2em solid black;
+    border: .2em solid black;   
     padding: 1em;
     margin: 0 auto;
-    width: 30em;
+    width: 50%;
     height: auto;
     text-align: left;
     font-size: 1.2em;
+    opacity: 0.8;
+    font-size: 1.7em;
 }
 
 .resume-description{
-     margin: 0 0 auto auto;
+    display: inline-block;
+    margin: 5em auto;
 }
 
 .left{
-     display: inline-block;
-     width: 40%;
-     height: auto;
-     padding-bottom: 1em;
+    margin: 0 auto;
+    display: inline-block;
+    width: 40%;
+    height: auto;
+    padding-bottom: 1em;
 }
 
 .right{
+    margin: 0 0;
      display: inline-block;
      width: 40%;
      height: auto;
@@ -78,24 +122,24 @@
 .top-text{
     border-bottom: 1px solid black;
     left: -1.5em;
-    padding-right: 18em;
+    padding-right: 12em;
 }
 
 .bottom-text{
-     font-size: 1.5em;
+    min-width: 80%;
+    font-size: 1.5em;
 }
 
 .resume-description img{
      width: 5%;
      height: auto;
      display: inline-block;
-     float: right;
      top: -2em;
-     left: 8em;
+     left: 22em;
 }
 
 .resume-description .overlay{
-     
+    width: 10%;     
 
 }
 
@@ -107,6 +151,11 @@
 .icon{
      margin: 0 0 auto auto;
      display: inline-block;
+}
+
+.overlay, .icon img{
+    min-width: 100%;
+    min-height: 100%;
 }
 
 .resume-icons .overlay{
@@ -121,7 +170,7 @@
 }
 
 .icon:hover .overlay{
-     opacity: 1;
+     opacity: 0.8;
 }
 
 .overlay .text{
@@ -131,23 +180,50 @@
 }
 
 .icon img{
-    width: 300px;
-    height: 200px;
+    width: 10em;
+    height: 15em;   
 }
 
 input{
     width: 75em;
 }
 
+.contact-me{
+    margin: 2em 2em auto auto;
+    position: inherit;
+    padding: 0 0 0 15em;
+}
+
+.contact-me input{
+    width: 60em;
+    height: 3em;
+    background-color: #F6F6F6;
+    margin: .5em;
+}
+
+.contact-me .bottom-input{
+    height: 20em;
+}
+
+.contact-me p{
+    padding: 0 0 0 21.5em;
+}
+
 .contact-me button{
      color: white;
      background-color: #E16237;
      border: none;
+     border-radius: 0.785em;
+     width: 10em;
+     height: 5em;
 }
 
 footer{
-     margin: 0 0 auto auto;
+     margin: 2em auto 2em auto;
+     padding-top: 4em;
+     padding-left: 25em;
      border-top: .2em solid black;
+     width: 60%;
 
 }
 
@@ -155,10 +231,17 @@ footer img{
      display: inline-block;
      width: 5%;
      height: auto;
+     margin: 0 auto;
 }
 
 footer h2{
      display: inline-block;
-     margin-bottom: 2em;
+     margin: 0 0 -2em 0;
      top: -1em;
+     width: auto;
+     padding: 0 1em 0 1em;
+}
+
+footer .left-image{
+    margin: 0 0 0 auto;
 }
