@@ -1,24 +1,25 @@
 *{
-    margin: auto 6em;
+    margin: auto 3em;
     position: relative;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .toolbar p{
-    border: .3em solid black;
-    width: 15em;
+    border: .25em solid black;
+    width: 12em;
     height: auto;
     text-align: center;
     padding: 1em;
-    margin: 2em;
+    margin-top: 1em;
+    margin-bottom: 6em;
 }
 .title-section img{
-    width: 40em;
+    width: 15em;
     height: auto;
 }
 
 .title-summary{
-    top: -12em;
+    top: -10em;
     text-align: left;
 }
 
@@ -29,39 +30,101 @@
 }
 
 .title-summary h2{
+     left: 6em;
 }
 
 .resume-opening{
-    background-color: lightgray;
+    background-color: #F6F6F6;
+}
+
+.resume-opening .left-half{
+     right: 35em;
+     text-align: right;
+     padding-top: 1em;
 }
 
 .resume-opening .right-half{
     background-color: white;
     border: .2em solid black;
     bottom: 6em;
-    left: 34    em;
+    left: 30em;
     width: 30em;
     height: auto;
+    text-align: left;
+    padding: 1em;
 }
 
-.resume-description h2{
-    border-bottom: .2em solid black;
+.resume-description{
+     margin: 0 0 auto auto;
+}
+
+.left{
+     display: inline-block;
+     width: 40%;
+     height: auto;
+     padding-bottom: 1em;
+}
+
+.right{
+     display: inline-block;
+     width: 40%;
+     height: auto;
+     padding-bottom: 1em;
+}
+
+.top-text{
+    border-bottom: 1px solid black;
+    left: -1.5em;
+    padding-right: 18em;
+}
+
+.bottom-text{
+     font-size: 1.5em;
+}
+
+.resume-description img{
+     width: 5%;
+     height: auto;
+     display: inline-block;
+     float: right;
+     top: -2em;
+     left: 8em;
+}
+
+.resume-icons{
+     margin: 0 0 auto auto;
+     padding: 0 auto;
 }
 
 .resume-icons img{
-    height: 15%;
-    width: 15%;
+    width: 20%;
+    height: auto;
 }
 
 input{
     width: 75em;
 }
 
+.contact-me button{
+     color: white;
+     background-color: #E16237;
+     border: none;
+}
+
 footer{
-    border-top: .2em solid black;
+     margin: 0 0 auto auto;
+     border-top: .2em solid black;
+
 }
 
 footer img{
-    height: 15%;
-    width: 15%;
+     display: inline-block;
+     width: 5%;
+     height: auto;
+}
+
+footer h2{
+     display: inline-block;
+     margin-bottom: 2em;
+     top: -1em;
 }
