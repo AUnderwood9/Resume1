@@ -12,16 +12,15 @@
         <p>Andrew Underwood III</p>
 
         <div class="navbar">
-            <ul>
-                <li>About</li>
-                <li>Experience</li>
-                <li>Work</li>
-                <li>Contact</li>
-            </ul>
+            <a href="#About">About</a>
+            <a href="#Experience">Experience</a>
+            <a href="#Work">Work</a>
+            <a href="#Contact">Contact</a>
+
         </div>
     </div>
 
-    <div class="title-section">
+    <div id="About" class="title-section">
         <img src="resources/images/meme.jpg" alt="">
         <div class="title-summary">
             <h1>Web Developer</h1>
@@ -46,15 +45,12 @@
     </div>
 
 
-     <div class="resume-description">
+     <div id="Experience" class="resume-description">
           <div class="left">
              <h1 class="top-text">
                   Stuff
              </h1>
-             <img src="resources/images/linkgray.svg" />
-             <div class="overlay">
-                  <img class="reveal" src="resources/images/linkdarkgray.svg" />
-             </div>
+             <div class="img-placeholder"></div>
              <p class="bottom-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -64,7 +60,7 @@
               <h1 class="top-text">
                   Stuff
              </h1>
-             <img src="resources/images/linkgray.svg" />
+             <div class="img-placeholder"></div>
              <p class="bottom-text">
                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -75,7 +71,7 @@
             <h1 class="top-text">
                  Stuff
             </h1>
-            <img src="resources/images/linkgray.svg" />
+            <div class="img-placeholder"></div>
             <p class="bottom-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..
@@ -85,7 +81,7 @@
             <h1 class="top-text">
                  Stuff
             </h1>
-            <img src="resources/images/linkgray.svg" />
+            <div class="img-placeholder"></div>
             <p class="bottom-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -94,7 +90,7 @@
      </div>
 
 
-    <div class="resume-icons">
+    <div id="Work" class="resume-icons">
          <div class="icon">
               <img src="resources/images/meme1.jpg" alt="">
               <div class="overlay">
@@ -138,11 +134,17 @@
         </div>
     </div>
 
-    <div class="contact-me">
+    <div id="Contact" class="contact-me">
+        <div class="text">
+            <h1>Let's Talk!</h1>
+            <h2>Lets work together.
+                UnderwoodAndrewIII@gmail.com
+            </h2>
+        </div>
         <form>
-            <input type="text" name="Name">
-            <input type="text" name="Email">
-            <input class="bottom-input" type="text" name="Message">
+            <input type="text" name="Name" placeholder="Name">
+            <input type="text" name="Email" placeholder="Email">
+            <input class="bottom-input" type="text" name="Message" placeholder="Message">
             <p>
                  <button>Send</button>
             </p>

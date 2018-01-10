@@ -22,13 +22,21 @@
 }
 .toolbar .navbar{
     display: inline-block;
-    margin: 0 0 0 25%;
+    margin: 0 0 0 50%;
 }
 
-.toolbar .navbar li{
+.toolbar .navbar a{
     margin: 0 0 0 0;
     display: inline-block;
     padding: 0 1em 0 1em;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.toolbar .navbar a:hover{
+    border-bottom: .25em solid #E16237;
+    padding-bottom: .5em;
 }
 
 .title-section img{
@@ -80,12 +88,12 @@
 }
 
 .resume-opening .left-half  h2{
-    opacity: 0.8;
+    opacity: 0.4;
 
 }
 
 .resume-opening .right-half{
-     display: inline-block;
+    display: inline-block;
     background-color: white;
     border: .2em solid black;   
     padding: 1em;
@@ -104,7 +112,7 @@
 }
 
 .left{
-    margin: 0 auto;
+    margin: 0 0;
     display: inline-block;
     width: 40%;
     height: auto;
@@ -120,9 +128,9 @@
 }
 
 .top-text{
-    border-bottom: 1px solid black;
+    border-bottom: .09em solid black;
     left: -1.5em;
-    padding-right: 12em;
+    padding-right: 13.5em;
 }
 
 .bottom-text{
@@ -130,17 +138,22 @@
     font-size: 1.5em;
 }
 
-.resume-description img{
-     width: 5%;
-     height: auto;
-     display: inline-block;
-     top: -2em;
-     left: 22em;
+.resume-description .img-placeholder{
+    width: 1em;
+    height: auto;
+    display: inline-block;
+    top: -2em;
+    left: 30em;
+    padding: 1em 1em 1em 1em;
+    background-image: url("resources/images/linkgray.svg");
+    background-repeat: no-repeat;
 }
 
-.resume-description .overlay{
-    width: 10%;     
-
+.resume-description .img-placeholder:hover{
+    width: 1em;
+    height: auto;
+    background-image: url("resources/images/linkdarkgray.svg");
+    background-repeat: no-repeat;
 }
 
 .resume-icons{
@@ -203,6 +216,26 @@ input{
 
 .contact-me .bottom-input{
     height: 20em;
+}
+
+.contact-me .text{
+    display: inline-block;
+}
+
+.contact-me .text h1{
+    display: inline-block;
+    margin: 0 0;
+    right: 5em;
+    opacity: 0.8;
+}
+
+.contact-me .text h2{
+    display: inline-block;
+    margin: 0 0;
+    text-align: right;
+    width: 50%;
+    left: 3em;
+    opacity: 0.4;
 }
 
 .contact-me p{
