@@ -27,6 +27,11 @@
     span{
         @include text_color($dark_orange);
     }
+
+    .hover_underline:hover {
+        @include underline(.2em, 0em, $dark_orange);
+    }
+ 
     .bottom-intro{
         .intro-image{
             width: 30em;
@@ -37,6 +42,11 @@
 
         .btm-text-top{
             @include text_size(3em);
+            @include text_color($dark_orange);
+        }
+
+        .btm-text-btm{
+            @include text_size(1.7em);
         }
     }
 }
@@ -69,8 +79,35 @@
 }
 
 .resume-description{
-    h1{
-        @include underline(.08em, .35em);
+    .left-section{
+        span{
+        }
+        .inline-image{
+            width: 2em;
+            height: 2em;
+            $img_url: "resources/images/linkgray.svg";
+            @include background_image($img_url, contain);
+        }
+    }
+
+    .right-section{
+        span{
+        }
+        .inline-image{
+            width: 2em;
+            height: 2em;
+            $img_url: "resources/images/linkgray.svg";
+            @include background_image($img_url, contain);
+        }
+    }
+
+    .inline-image:hover{
+        $img_url: "resources/images/linkdarkgray.svg";
+        @include background_image($img_url, contain);
+    }
+    
+    .add-underline{
+        @include underline(.12em, .35em);
     }
 }
 
@@ -94,11 +131,12 @@
 
 .resume-contact{
     h1{
-
+        @include text_size(4em);
     }
 
     h2{
         @include text_alignment(right);
+        @include set_opacity(0.8);
     }
     form{
         margin-left: 26em;
@@ -121,14 +159,14 @@
         @include text_alignment(center);
         width: 7em;
         margin-left: 45.9em;
-        a{
-            @include text_color($white);
-        }
+        @include clear_border;
     }
 
     
 }
 
 .resume-footer{
+    width: 40em;
     @include top_line(.1em, .75em);
+
 }

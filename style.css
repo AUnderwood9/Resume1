@@ -13,6 +13,10 @@
 .intro-container span {
   color: darkorange; }
 
+.intro-container .hover_underline:hover {
+  border-bottom: 0.2em solid darkorange;
+  padding-bottom: 0em; }
+
 .intro-container .bottom-intro .intro-image {
   width: 30em;
   height: 30em;
@@ -22,7 +26,11 @@
   background-position: initial, initial; }
 
 .intro-container .bottom-intro .btm-text-top {
-  font-size: 3em; }
+  font-size: 3em;
+  color: darkorange; }
+
+.intro-container .bottom-intro .btm-text-btm {
+  font-size: 1.7em; }
 
 .resume-summary {
   background-color: #F6F6F6;
@@ -43,8 +51,30 @@
     border: 0.2em solid black;
     padding: 1.5em; }
 
-.resume-description h1 {
-  border-bottom: 0.08em solid black;
+.resume-description .left-section .inline-image {
+  width: 2em;
+  height: 2em;
+  background-image: url("resources/images/linkgray.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: initial, initial; }
+
+.resume-description .right-section .inline-image {
+  width: 2em;
+  height: 2em;
+  background-image: url("resources/images/linkgray.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: initial, initial; }
+
+.resume-description .inline-image:hover {
+  background-image: url("resources/images/linkdarkgray.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: initial, initial; }
+
+.resume-description .add-underline {
+  border-bottom: 0.12em solid black;
   padding-bottom: 0.35em; }
 
 .resume-work img {
@@ -69,8 +99,12 @@
 .resume-work .row div:hover {
   opacity: 1; }
 
+.resume-contact h1 {
+  font-size: 4em; }
+
 .resume-contact h2 {
-  text-align: right; }
+  text-align: right;
+  opacity: 0.8; }
 
 .resume-contact form {
   margin-left: 26em; }
@@ -88,10 +122,10 @@
   color: white;
   text-align: center;
   width: 7em;
-  margin-left: 45.9em; }
-  .resume-contact .btn-default a {
-    color: white; }
+  margin-left: 45.9em;
+  border: none; }
 
 .resume-footer {
+  width: 40em;
   border-top: 0.1em solid black;
   padding-top: 0.75em; }
