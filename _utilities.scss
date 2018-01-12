@@ -9,29 +9,6 @@
     border: none;
 }
 
-@mixin text_color($color: black){
-color: $color;
-}
-
-@mixin background_image($url, $size:50%, $position1: initial, $position2: initial){
-background-image: url($url);
-background-repeat: no-repeat;
-background-size: $size;
-background-position: $position1, $position2; 
-}
-
-@mixin text_size($size){
-    font-size: $size;
-}
-
-@mixin background_color($color){
-    background-color: $color;
-}
-
-@mixin set_opacity($value){
-    opacity: $value;
-}
-
 @mixin center_col{
     float: none;
     margin: 0 auto;
@@ -42,33 +19,9 @@ background-position: $position1, $position2;
     padding-bottom: $padding;
 }
 
-@mixin text_fade_overlay{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: $white;
-    justify-content: center;
-
-    .text{
-        transform: translate(40%, 600%);
-    }
-}
-
-@mixin text_alignment($position){
-    text-align: $position;
-}
-
 @mixin top_line($thickness:.1em, $padding:.75em){
     border-top: $thickness solid black;
     padding-top: $padding;
 }
 
-@mixin remove_text_decoration{
-    text-decoration: none;
-}
+
