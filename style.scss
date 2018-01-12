@@ -1,0 +1,119 @@
+@import "variables";
+@import "utilities";
+
+.main-padding{
+
+}
+
+.main-font{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.background-img{
+
+}
+
+/*
+[class*="img-"]{
+
+}
+*/
+
+.intro-container{
+    .add-border{
+        @include add_border();
+    }
+
+    span{
+        @include text_color($dark_orange);
+    }
+    .bottom-intro{
+        .intro-image{
+            width: 30em;
+            height: 30em;
+            $img_url: "resources/images/meme.jpg";
+            @include background_image($img_url, contain);
+        }
+
+        .btm-text-top{
+            @include text_size(3em);
+        }
+    }
+}
+
+.resume-summary{
+    @include background_color($off_white);
+    height: 25em;
+    .summary-overview{
+        @include text_alignment(right);
+        h1{
+            @include text_size(4em);
+            @include set_opacity(.5);
+        }
+        h2{
+            @include text_size(1.7em);
+            @include set_opacity(.8);
+        }
+    }
+
+    .summary-description{
+        @include background_color($white);
+        p{
+            @include text_size(1.5em);
+        }
+    }
+
+    .add-border{
+        @include add_border(.2em, 1.5em);
+    }
+}
+
+.resume-description{
+    h1{
+        @include underline(.08em, .35em);
+    }
+}
+
+.resume-work{
+    img{
+        width: 20em;
+        height: 20em;
+    }
+
+    .row{
+        .overlay{
+            @include text_fade_overlay;
+        }
+
+        div:hover{
+            opacity: 1;
+        }
+    }
+    
+}
+
+.resume-contact{
+    h1{
+
+    }
+
+    h2{
+        @include text_alignment(right);
+    }
+
+    .text-box{
+        width: 60em;
+        height: 3em;
+        background-color: #F6F6F6;
+        margin: .5em;
+    }
+
+    .text-bottom{
+        width: 60em;
+        height: 20em;
+    }
+}
+
+.resume-footer{
+    @include top_line(.1em, .75em);
+}

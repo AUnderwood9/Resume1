@@ -1,0 +1,87 @@
+.main-font {
+  font-family: Helvetica, Arial, sans-serif; }
+
+/*
+[class*="img-"]{
+
+}
+*/
+.intro-container .add-border {
+  border: 0.1em solid black;
+  padding: 0.75em; }
+
+.intro-container span {
+  color: darkorange; }
+
+.intro-container .bottom-intro .intro-image {
+  width: 30em;
+  height: 30em;
+  background-image: url("resources/images/meme.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: initial, initial; }
+
+.intro-container .bottom-intro .btm-text-top {
+  font-size: 3em; }
+
+.resume-summary {
+  background-color: #F6F6F6;
+  height: 25em; }
+  .resume-summary .summary-overview {
+    text-align: right; }
+    .resume-summary .summary-overview h1 {
+      font-size: 4em;
+      opacity: 0.5; }
+    .resume-summary .summary-overview h2 {
+      font-size: 1.7em;
+      opacity: 0.8; }
+  .resume-summary .summary-description {
+    background-color: white; }
+    .resume-summary .summary-description p {
+      font-size: 1.5em; }
+  .resume-summary .add-border {
+    border: 0.2em solid black;
+    padding: 1.5em; }
+
+.resume-description h1 {
+  border-bottom: 0.08em solid black;
+  padding-bottom: 0.35em; }
+
+.resume-work img {
+  width: 20em;
+  height: 20em; }
+
+.resume-work .row .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: white;
+  justify-content: center; }
+  .resume-work .row .overlay .text {
+    transform: translate(40%, 600%); }
+
+.resume-work .row div:hover {
+  opacity: 1; }
+
+.resume-contact h2 {
+  text-align: right; }
+
+.resume-contact .text-box {
+  width: 60em;
+  height: 3em;
+  background-color: #F6F6F6;
+  margin: .5em; }
+
+.resume-contact .text-bottom {
+  width: 60em;
+  height: 20em; }
+
+.resume-footer {
+  border-top: 0.1em solid black;
+  padding-top: 0.75em; }
