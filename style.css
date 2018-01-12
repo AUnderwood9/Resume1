@@ -72,15 +72,22 @@
 .resume-contact h2 {
   text-align: right; }
 
-.resume-contact .text-box {
-  width: 60em;
-  height: 3em;
-  background-color: #F6F6F6;
-  margin: .5em; }
+.resume-contact form {
+  margin-left: 26em; }
+  .resume-contact form .text-box {
+    width: 40em;
+    height: 3em;
+    background-color: #F6F6F6;
+    margin: .5em 0; }
+  .resume-contact form .text-bottom {
+    width: 40em;
+    height: 15em; }
 
-.resume-contact .text-bottom {
-  width: 60em;
-  height: 20em; }
+.resume-contact .btn-default {
+  background-color: darkorange;
+  color: white;
+  width: 7em;
+  margin-left: 45.9em; }
 
 .resume-footer {
   border-top: 0.1em solid black;

@@ -100,18 +100,29 @@
     h2{
         @include text_alignment(right);
     }
+    form{
+        margin-left: 26em;
+        .text-box{
+            width: 40em;
+            height: 3em;
+            background-color: #F6F6F6;
+            margin: .5em 0;
+        }
 
-    .text-box{
-        width: 60em;
-        height: 3em;
-        background-color: #F6F6F6;
-        margin: .5em;
+        .text-bottom{
+            width: 40em;
+            height: 15em;
+        }   
     }
 
-    .text-bottom{
-        width: 60em;
-        height: 20em;
+    .btn-default{
+        @include background_color($dark_orange);
+        @include text_color($white);
+        width: 7em;
+        margin-left: 45.9em;
     }
+
+    
 }
 
 .resume-footer{
