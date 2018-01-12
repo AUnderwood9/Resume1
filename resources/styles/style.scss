@@ -1,9 +1,9 @@
-@import "variables";
-@import "utilities";
-@import "utilities_basic_sizing";
-@import "utilities_text_utilities";
-@import "utilities_basic_decoration";
-@import "utilities_basic_effects";
+@import "utilities/variables";
+@import "utilities/utilities";
+@import "utilities/utilities_basic_sizing";
+@import "utilities/utilities_text_utilities";
+@import "utilities/utilities_basic_decoration";
+@import "utilities/utilities_basic_effects";
 /*
 body{
     background: linear-gradient(-45deg, $white, $off_white, $grey_white);
@@ -47,7 +47,7 @@ body{
     .bottom-intro{
         .intro-image{
             @include adjust_width_height(30em, 30em);
-            $img_url: "resources/images/meme.jpg";
+            $img_url: "../images/meme.jpg";
             @include background_image($img_url, contain);
         }
 
@@ -102,7 +102,7 @@ body{
         }
         .inline-image{
             @include adjust_width_height(2em, 2em);
-            $img_url: "resources/images/linkgray.svg";
+            $img_url: "../images/linkgray.svg";
             @include background_image($img_url, contain);
         }
     }
@@ -112,13 +112,13 @@ body{
         }
         .inline-image{
             @include adjust_width_height(2em, 2em);
-            $img_url: "resources/images/linkgray.svg";
+            $img_url: "../images/linkgray.svg";
             @include background_image($img_url, contain);
         }
     }
 
     .inline-image:hover{
-        $img_url: "resources/images/linkdarkgray.svg";
+        $img_url: "../images/linkdarkgray.svg";
         @include background_image($img_url, contain);
     }
     
